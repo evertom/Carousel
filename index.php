@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Carousel</title>
+        <title>Carousel-master</title>
         <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css"/>
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui.min.js"></script>
