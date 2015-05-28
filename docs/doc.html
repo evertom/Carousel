@@ -1,0 +1,272 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Carousel Doc</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<style>
+	table{
+		width : 80%!important;
+		margin: 0px auto!important;
+	}
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>Carousel doc <small> como utilizar</small></h1>
+	<hr/>
+	<div class="row">
+		<div class="col-xs-8 col-sm-8	col-md-8	col-lg-8">
+			<h3>Bibliotecas base<small> atenção !!!</small></h3>
+			<div class="panel panel-info" >
+				<img class='responsive' src="img/bibliotecas_base.png" />
+			</div>
+			<p class='label label-danger'> ** Lembre-se que os endereçamentos podem mudar de acordo com a estrutura do seu projeto </p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-sm-8	col-md-8	col-lg-8">
+			<h3>Aplicando o plug-in<small> $('elemento').Carousel() </small></h3>
+			<div class="panel panel-primary" >
+				<img class='responsive' src="img/aplicando-plugin.png" />
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-sm-8	col-md-8	col-lg-8">
+			<h3>HTML<small> estrutura do html </small></h3>
+			<div class="panel panel-default" >
+				<img class='responsive' src="img/html.png" />
+			</div>
+			<p class='label label-danger'> ** Atente-se para a estrutura</p>
+			<p class='label label-danger'> ** Você pode utilizar class ou id para identificar sua div, escolhe a melhor opção para seu projeto.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-sm-8	col-md-8	col-lg-8">
+			<h3>Atributos por javascript <small> parâmetros e estilização.</small></h3>
+			<div class="panel panel-warning" >
+				<img class='responsive' src="img/estilizando_por_java_script.png" />
+			</div>
+			<p class='label label-danger'> ** todos os atributos seguem em tabela abaixo</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-sm-8	col-md-8	col-lg-8">
+			<h3>Atributos por data-*attributes <small> parâmetros e estilização.</small></h3>
+			<div class="panel panel-warning" >
+				<img class='responsive' src="img/estilizando_por_data-.png" />
+			</div>
+			<p class='label label-danger'> ** todos os atributos seguem em tabela abaixo</p>
+		</div>
+	</div>
+</div>
+<br/>
+<table class=' table table-striped' >
+	<thead>
+		<tr>
+			<th colspan='5'><center>Lista de Atributos</center></th>
+		</tr>
+		<tr>
+			<th>
+				javascript attributes
+			</th>
+			<th>
+				data-attributes
+			</th>
+			<th>
+				descrição
+			</th>
+			<th>
+				como usar
+			</th>
+			<th>
+				valor padrão
+			</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>height</td>
+			<td>data-height</td>
+			<td>define a altura da div que contém os slides</td>
+			<td>string com valores do tamanho, como, "300px" ou "50%"</td>
+			<td>"100%"</td>
+		</tr>
+		<tr>
+			<td>width</td>
+			<td>data-width</td>
+			<td>define a largura da div que contém os slides</td>
+			<td>string com valores do tamanho, como, "300px" ou "50%"</td>
+			<td>"100%"</td>
+		</tr>
+		<tr>
+			<td>position</td>
+			<td>data-position</td>
+			<td>comportamento da posição da div que contém os slides, em relação ao elemento parent</td>
+			<td>string com a propriedade css para position</td>
+			<td>relative</td>
+		</tr>
+		<tr>
+			<td>margin</td>
+			<td>data-margin</td>
+			<td>comportamento utilizado para centralizar ou dar margin a div que contém os slides</td>
+			<td>string com a propriedade css para margin</td>
+			<td>0px auto</td>
+		</tr>
+		<tr>
+			<td>border</td>
+			<td>data-border</td>
+			<td>definir borda para a div que contém os slides</td>
+			<td>string com a propriedade css para border</td>
+			<td>none</td>
+		</tr>
+		<tr>
+			<td>effect</td>
+			<td>data-effect</td>
+			<td>define os efeitos de passagem dos slides</td>
+			<td>suporte aos seguintes efeitos: blind, bounce, clip, drop, explode, fade, fold, highlight, puff, pulsate, scale, shake, size, slide e transfer </td>
+			<td>slide</td>
+		</tr>
+		<tr>
+			<td>img_height</td>
+			<td>data-img_height</td>
+			<td>define a altura para as imagens utilizadas</td>
+			<td>string com valores do tamanho, como, "300px" ou "50%" </td>
+			<td>"100%"</td>
+		</tr>
+		<tr>
+			<td>img_width</td>
+			<td>data-img_width</td>
+			<td>define a largura para as imagens utilizadas</td>
+			<td>string com valores do tamanho, como, "300px" ou "50%" </td>
+			<td>"100%"</td>
+		</tr>
+		<tr>
+			<td>arrow_left</td>
+			<td>data-arrow_left</td>
+			<td>seta para a esquerda</td>
+			<td>string com icone font-awesome</td>
+			<td> &lt i class='fa-2x fa fa-chevron-left'&gt &lt/i&gt </td>
+		</tr>
+		<tr>
+			<td>arrow_right</td>
+			<td>data-arrow_right</td>
+			<td>seta para a direita</td>
+			<td>string com icone font-awesome</td>
+			<td> &lt i class='fa-2x fa fa-chevron-right'&gt &lt/i&gt </td>
+		</tr>
+		<tr>
+			<td>activeColor</td>
+			<td>data-activeColor</td>
+			<td>comportamento hover e active dos seletores e setas</td>
+			<td>string com a propriedade css para color em hexadecimal ou rbga</td>
+			<td>"#00BFFF" tom de azul</td>
+		</tr>
+		<tr>
+			<td>btn_pause</td>
+			<td>data-btn_pause</td>
+			<td>icone para o botão pause</td>
+			<td>string com icone font-awesome</td>
+			<td> &lt i class='fa-2x fa fa-pause'&gt &lt/i&gt </td>
+		</tr>
+		<tr>
+			<td>btn_play</td>
+			<td>data-btn_play</td>
+			<td>icone para o botão play</td>
+			<td>string com icone font-awesome</td>
+			<td> &lt i class='fa-2x fa fa-play'&gt &lt/i&gt </td>
+		</tr>
+		<tr>
+			<td>has_selector</td>
+			<td>data-has_selector</td>
+			<td>define se existirá botões para selecionar slides individualmente</td>
+			<td>boolean</td>
+			<td> true </td>
+		</tr>
+		<tr>
+			<td>icones_selector</td>
+			<td>data-icones_selector</td>
+			<td>icones com os seletores de slides</td>
+			<td>string com icone font-awesome</td>
+			<td> &lt i class='fa-2x fa fa-circle'&gt &lt/i&gt </td>
+		</tr>
+		<tr>
+			<td>pause_able</td>
+			<td>data-pause_able</td>
+			<td>define se existirá botão pause</td>
+			<td>boolean</td>
+			<td> true </td>
+		</tr>
+		<tr>
+			<td>stop_on_hover</td>
+			<td>data-stop_on_hover</td>
+			<td>interrompe a passagem de slide quando mouse estiver sobre a imagem </td>
+			<td>boolean</td>
+			<td> true </td>
+		</tr>
+		<tr>
+			<td>automatic</td>
+			<td>data-automatic</td>
+			<td>a passagem de slide é iniciada automaticamente, e será mantida assim por intervalo determinado de tempo</td>
+			<td>boolean</td>
+			<td> true </td>
+		</tr>
+		<tr>
+			<td>time_to_change</td>
+			<td>data-time_to_change</td>
+			<td>tempo em que ocorre a transição automatica de slide</td>
+			<td>valor numérico int (inteiro) em milissegundos</td>
+			<td>8000</td>
+		</tr>
+		<tr>
+			<td>* key_navegation</td>
+			<td>* data-key_navegation</td>
+			<td>utiliza as setas do teclado para navegar entre os slides </td>
+			<td>boolean</td>
+			<td> false </td>
+		</tr>
+		<tr>
+			<td>menu</td>
+			<td>data-menu</td>
+			<td>objeto para formatação do menu, icones seletores e botões pause e play</td>
+			<td>objeto com propriedades css, por exemplo, '{"left": "0px", "top":"50px"}', lembrando que a orientação ocorre sempre a partir da esquerda e toda vez que top é utilizado tem preferencia em relação ao bottom</td>
+			<td> '{"position": "absolute", "bottom": "1px", "left": "0%", "right": "0%", "display": "flex","list-style": "none"}' </td>
+		</tr>
+		<tr>
+			<td>liClass</td>
+			<td>data-liClass</td>
+			<td>define uma classe para formatação geral dos menus</td>
+			<td>string com o nome da classe css</td>
+			<td>null</td>
+		</tr>
+		<tr>
+			<td>color</td>
+			<td>data-color</td>
+			<td>define as cores dos icones e botões</td>
+			<td>string com a propriedade css para color em hexadecimal ou rbga</td>
+			<td>"#000" preto</td>
+		</tr>
+		
+	</tbody>
+	<tfoot>
+		<th>
+			<tr>
+				<td colspan="5">* A key_navegation ainda está em testes, existe uma chance de acontecer falhas em seu uso, por isso por padrão esta como false.</td>
+			</tr>
+		</th>
+	</tfoot>
+</table>
+<br/>
+<div class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<center><h5>copyright <small> <a class='link' href='http://www.epsoftware.com.br' target='_blank'> epsoftware.com.br </a></small></h5></center>
+			<center><h5>developed by <small> Everton J Paula</small></h5></center>
+		</div>
+	</div>
+</div>
+</body>
+</html>
